@@ -9,7 +9,7 @@ import time
 
 model = VGG19(weights='imagenet')
 
-img_path = 'Elephant.jpg'
+img_path = 'bab4/Elephant.jpg'
 try:
     img = image.load_img(img_path, target_size=(224, 224))
     x = image.img_to_array(img)
