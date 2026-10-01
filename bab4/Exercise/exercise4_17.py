@@ -33,7 +33,7 @@ print(f"Visualizing feature maps for layer index {target_layer_idx}: {layer_name
 model_feat = Model(inputs=model.inputs, outputs=model.layers[target_layer_idx].output)
 
 try:
-    img = load_img('Elephant.jpg', target_size=(224, 224))
+    img = load_img('bab4/Elephant.jpg', target_size=(224, 224))
     img = img_to_array(img)
     img = expand_dims(img, axis=0)
     img = preprocess_input(img)
